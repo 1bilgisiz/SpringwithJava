@@ -2,11 +2,13 @@ package kodlamaio.rentAcar.business.abstracts;
 
 import java.util.List;
 
-import kodlamaio.rentAcar.entities.concretes.Brand;
+import kodlamaio.rentAcar.business.request.CreateBrandsRequest;
+import kodlamaio.rentAcar.business.responses.GetAllBrandsResponse;
 
 public interface BrandService {
 
-	List<Brand> getAll();
+	List< GetAllBrandsResponse > getAll();
+	void add(CreateBrandsRequest createbrandsRequest);
 	
 	
 }
